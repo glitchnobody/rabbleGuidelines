@@ -88,7 +88,7 @@ export default function Home() {
           Copied to clipboard
         </div>
       )}
-      <section className=" max-w-screen-2xl mx-auto  border-l border-r border-muted-dark border-dotted relative h-[70dvh] flex  flex-col justify-center gap-20 ">
+      <section className=" max-w-screen-2xl mx-auto  border-l border-r border-muted-dark border-dotted relative h-[calc(100dvh-95px)] flex  flex-col justify-center gap-20 ">
         <div className=" relative z-10">
           <h1 className=" px-4   font-medium text-6xl  w-full  font-display text-primary-dark ">
             <span className=" font-bold text-accentTeal-dark">Rabble. </span>{" "}
@@ -110,14 +110,64 @@ export default function Home() {
           <hr className=" border-dotted border-muted-dark" />
           <ul className=" flex gap-4 flex-wrap px-4   text-muted-dark ">
             <li className="  border-r py-2    border-dotted border-muted-dark pr-4 hover:text-accentPink-dark hover:underline">
-              <Link href="#colors">Colors</Link>
+              <Link href="#Logo">Logo</Link>
             </li>
             <li className="  border-r  py-2   border-dotted border-muted-dark pr-4 hover:text-accentPink-dark hover:underline">
               <Link href="#colors">Colors</Link>
             </li>
+            <li className="  border-r  py-2   border-dotted border-muted-dark pr-4 hover:text-accentPink-dark hover:underline">
+              <Link href="#Typography">Typography</Link>
+            </li>
+            <li className="  border-r  py-2   border-dotted border-muted-dark pr-4 hover:text-accentPink-dark hover:underline">
+              <Link href="#Visual">Visual Elements</Link>
+            </li>
           </ul>
         </div>
       </div>
+      <section
+        style={{
+          alignItems: "start",
+        }}
+        id="Logo"
+        className="  relative h-fit grid  grid-cols-[1fr,2fr] border-dotted border-muted-dark border max-w-screen-2xl m-auto"
+      >
+        <div className=" sticky mt-10 top-10  ">
+          <h2 className=" px-4 font-medium text-3xl  w-full font-display text-primary-dark ">
+            Logo
+          </h2>
+          <hr className="  mt-4 border-dotted border-muted-dark" />
+          <p className=" px-4  w-full pt-5  font-light text-muted-dark">
+            logo are of 2 types
+          </p>
+
+          <ul className=" px-4  w-full pt-5 text-sm  font-light text-muted-dark list-disc ml-8">
+            <li>Rabble. text for navbar/footer on ui & posts</li>
+            <li>Motif Butterfly for everything else</li>
+          </ul>
+
+          <br />
+          <br />
+          <p className=" px-4  w-full pt-5  font-light text-muted-dark">
+            The logo aspect ratios are fixed you can configure the height to get
+            any size you want
+          </p>
+          <hr className=" mt-4 border-dotted border-muted-dark" />
+        </div>
+
+        <div className=" pt-10 w-full overflow-hidden border-l border-dotted border-muted-dark">
+          <h3 className="px-4  text-3xl font-medium font-display ">
+            Rabble. Logo
+          </h3>
+          <hr className="  mt-4 border-dotted border-muted-dark" />
+          <RabbleFull />
+          <hr className="  border-dotted border-muted-dark" />
+          <h3 className="px-4 mt-10  text-3xl font-medium font-display ">
+            Motif Butterfly Logo
+          </h3>
+          <hr className="  mt-4 border-dotted border-muted-dark" />
+          <RabbleLogo />
+        </div>
+      </section>
 
       <section
         style={{
@@ -198,7 +248,7 @@ export default function Home() {
         style={{
           alignItems: "start",
         }}
-        id="colors"
+        id="Typography"
         className="  relative h-fit grid  grid-cols-[1fr,2fr] border-dotted border-muted-dark border max-w-screen-2xl m-auto"
       >
         <div className=" sticky mt-10 top-10  ">
@@ -293,7 +343,7 @@ export default function Home() {
         style={{
           alignItems: "start",
         }}
-        id="colors"
+        id="Visual"
         className="  relative h-fit grid  grid-cols-[1fr,2fr] border-dotted border-muted-dark border max-w-screen-2xl m-auto"
       >
         <div className=" sticky mt-10 top-10  ">
@@ -341,51 +391,6 @@ export default function Home() {
               ></Image>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section
-        style={{
-          alignItems: "start",
-        }}
-        id="colors"
-        className="  relative h-fit grid  grid-cols-[1fr,2fr] border-dotted border-muted-dark border max-w-screen-2xl m-auto"
-      >
-        <div className=" sticky mt-10 top-10  ">
-          <h2 className=" px-4 font-medium text-3xl  w-full font-display text-primary-dark ">
-            Logo
-          </h2>
-          <hr className="  mt-4 border-dotted border-muted-dark" />
-          <p className=" px-4  w-full pt-5  font-light text-muted-dark">
-            logo are of 2 types
-          </p>
-
-          <ul className=" px-4  w-full pt-5 text-sm  font-light text-muted-dark list-disc ml-8">
-            <li>Rabble. text for navbar/footer on ui & posts</li>
-            <li>Motif Butterfly for everything else</li>
-          </ul>
-
-          <br />
-          <br />
-          <p className=" px-4  w-full pt-5  font-light text-muted-dark">
-            The logo aspect ratios are fiex you can configure the height to get
-            any size you want
-          </p>
-          <hr className=" mt-4 border-dotted border-muted-dark" />
-        </div>
-
-        <div className=" pt-10 w-full overflow-hidden border-l border-dotted border-muted-dark">
-          <h3 className="px-4  text-3xl font-medium font-display ">
-            Rabble. Logo
-          </h3>
-          <hr className="  mt-4 border-dotted border-muted-dark" />
-          <RabbleFull />
-          <hr className="  border-dotted border-muted-dark" />
-          <h3 className="px-4 mt-10  text-3xl font-medium font-display ">
-            Motif Butterfly Logo
-          </h3>
-          <hr className="  mt-4 border-dotted border-muted-dark" />
-          <RabbleLogo />
         </div>
       </section>
     </main>
