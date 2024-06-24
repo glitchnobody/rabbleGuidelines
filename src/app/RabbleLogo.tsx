@@ -107,7 +107,7 @@ export default function RabbleLogo() {
         </div>
 
         <hr className=" my-3  border-dotted border-muted-dark" />
-        <div className=" text-muted-dark  mb-1 ">Foreground Color</div>
+        <div className=" text-muted-dark  mb-1 ">Background Color</div>
         <div className=" flex gap-2">
           <div
             onClick={() => setBackground("#08F7AF")}
@@ -118,7 +118,7 @@ export default function RabbleLogo() {
             className="cursor-pointer h-10 aspect-square bg-secondary-dark rounded-full border-2 border-muted-dark"
           />
           <div
-            onClick={() => setForeground("#ffffff")}
+            onClick={() => setBackground("#ffffff")}
             className="cursor-pointer h-10 aspect-square bg-white rounded-full border-2 border-muted-dark"
           />
           <div
