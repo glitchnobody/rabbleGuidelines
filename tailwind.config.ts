@@ -14,7 +14,7 @@ const config: Config = {
           light: "#151320",
         },
         secondary: {
-          dark: "#151320",
+          dark: "#0C0E0D",
           light: "#F0F0F0",
         },
         muted: {
@@ -38,17 +38,18 @@ const config: Config = {
           light: "#8B33FF",
         },
         card: {
-          dark: "#1A1828",
+          dark: "#171717",
           light: "#FFFFFF",
         },
         cardForeground: {
-          dark: "#211F2E",
+          dark: "#1D2422",
           light: "#E7E7E7",
         },
         chat: {
           dark: "#3D1770",
           light: "#FFFFFF",
         },
+        logoBackground: "#151320",
       },
       fontFamily: {
         display: ["Outfit", "sans-serif"],

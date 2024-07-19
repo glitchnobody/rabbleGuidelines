@@ -116,7 +116,7 @@ width="${(size * 1069) / 500}" height="${size}"
           />
           <div
             onClick={() => setForeground("#151320")}
-            className="cursor-pointer h-10 aspect-square bg-secondary-dark rounded-full border-2 border-muted-dark"
+            className="cursor-pointer h-10 aspect-square bg-logoBackground rounded-full border-2 border-muted-dark"
           />
           <div
             onClick={() => setForeground("#ffffff")}
@@ -137,7 +137,7 @@ width="${(size * 1069) / 500}" height="${size}"
           />
           <div
             onClick={() => setBackground("#151320")}
-            className="cursor-pointer h-10 aspect-square bg-secondary-dark rounded-full border-2 border-muted-dark"
+            className="cursor-pointer h-10 aspect-square bg-logoBackground rounded-full border-2 border-muted-dark"
           />
           <div
             onClick={() => setBackground("#ffffff")}

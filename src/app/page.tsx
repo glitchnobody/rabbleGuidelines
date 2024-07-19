@@ -20,7 +20,7 @@ export default function Home() {
       color: "#FFFFFF",
     },
     {
-      color: "#151320",
+      color: "#0C0E0D",
     },
     {
       color: "#8C8A93",
@@ -38,10 +38,10 @@ export default function Home() {
       color: "#8B33FF",
     },
     {
-      color: "#1A1828",
+      color: "#171717",
     },
     {
-      color: "#211F2E",
+      color: "#1D2422",
     },
     {
       color: "#3D1770",
@@ -50,7 +50,7 @@ export default function Home() {
 
   const lightColors = [
     {
-      color: "#151320",
+      color: "#0C0E0D",
     },
     {
       color: "#F0F0F0",
@@ -78,6 +78,12 @@ export default function Home() {
     },
     {
       color: "#FFFFFF",
+    },
+  ];
+
+  const socialColors = [
+    {
+      color: "#151320",
     },
   ];
 
@@ -222,7 +228,7 @@ export default function Home() {
             Light Colors
           </h3>
           <hr className="  mt-4 border-dotted border-muted-dark" />
-          <div className=" p-4  bg-secondary-light/70  w-full flex gap-4 flex-wrap  ">
+          <div className=" p-4  mb-20 bg-secondary-light/70  w-full flex gap-4 flex-wrap  ">
             {lightColors.map((color, index) => (
               <div
                 key={index}
@@ -240,6 +246,22 @@ export default function Home() {
                 <div className=" text-md  p-2 my-1">{color.color}</div>
               </div>
             ))}
+          </div>
+          <hr className="  border-dotted border-muted-dark" />
+          <div className="px-4  justify-between flex items-center py-10">
+            <h3 className=" text-3xl font-medium font-display ">
+              Logo default background
+            </h3>
+            <div className=" flex gap-4 items-center ">
+              <div
+                onClick={() => {
+                  navigator.clipboard.writeText("#151320");
+                  setCopy(true);
+                }}
+                className=" cursor-pointer h-10 aspect-square  bg-logoBackground outline rounded-full"
+              ></div>
+              <span>#151320</span>
+            </div>
           </div>
         </div>
       </section>
