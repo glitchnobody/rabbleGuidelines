@@ -368,7 +368,7 @@ export default function Home() {
         id="Visual"
         className="  relative h-fit grid  grid-cols-[1fr,2fr] border-dotted border-muted-dark border max-w-screen-2xl m-auto"
       >
-        <div className=" sticky mt-10 top-10  ">
+        {/* <div className=" sticky mt-10 top-10  ">
           <h2 className=" px-4 font-medium text-3xl  w-full font-display text-primary-dark ">
             Visual Elements
           </h2>
@@ -413,7 +413,7 @@ export default function Home() {
               ></Image>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );
